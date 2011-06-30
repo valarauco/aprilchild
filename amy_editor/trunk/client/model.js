@@ -232,7 +232,13 @@ amy.MainMenuModel.prototype.loadElements = function(acElem, callbackOnSuccess, c
     item.properties.label = $loc('mi_File_NewFolder');
     item.properties.commandId = 'file__new_folder';
 	item.properties.isActive = client.controller.checkIfNewFolderPossible;
-
+	
+    //		New Project
+    item = g_item.appendChild($new(ACElement));
+    item.isCollection = false;
+    item.properties.label = $loc('mi_File_NewProject');
+    item.properties.commandId = 'file__new_project';
+	item.properties.isActive = false;
 
     // 		------------------
     item = g_item.appendChild($new(ACElement));
@@ -275,7 +281,19 @@ amy.MainMenuModel.prototype.loadElements = function(acElem, callbackOnSuccess, c
 	item = g_item.appendChild($new(ACElement));
 	item.isCollection = false;
 	item.properties.isSeparator = true;
-	
+    
+    //	Open project
+    item = g_item.appendChild($new(ACElement));
+    item.isCollection = false;
+    item.properties.label = $loc('mi_File_ExportProject');
+    item.properties.commandId = 'file__export_project';
+    item.properties.isActive = false;
+    
+	// 		------------------
+    item = g_item.appendChild($new(ACElement));
+    item.isCollection = false;
+    item.properties.isSeparator = true;
+
     // 		Refresh list
     item = $new(ACElement);
     item.isCollection = false;

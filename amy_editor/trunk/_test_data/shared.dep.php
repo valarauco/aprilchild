@@ -97,13 +97,12 @@ abstract class DEPTask
         $class_name = 'Task_'.implode('_', $paths['path_parts']);
         if (false === strpos($content, "class $class_name extends DEPTask"))
         {
-            $this->write("Could not run task `$task_name': Wrong task definition inside the task file at `$task_path'.");SSS
+            $this->write("Could not run task `$task_name': Wrong task definition inside the task file at `$task_path'.");
             return false;
         }
 
-        include_once $task_path;i really dont think opera qualifies as a candidate for allowance
-        it sucks big time
-              if (!class_exists($class_name))
+        include_once $task_path;
+        if (!class_exists($class_name))
         {
             $this->write("Could not run task `$task_name': Missing task definition in the file `$task_path'. Task class `$class_name' not found.");
             return false;

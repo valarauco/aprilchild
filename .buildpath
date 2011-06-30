@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="amy_editor/trunk"/>
+	<buildpathentry kind="src" path="fry/api/php"/>
+	<buildpathentry kind="src" path="fry/loaders"/>
+	<buildpathentry kind="src" path="fry/test"/>
+	<buildpathentry kind="src" path="fry/tools"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
