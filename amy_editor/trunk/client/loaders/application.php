@@ -37,6 +37,7 @@
 	include('../controller.user.js');
 	include('../controller.bundles.js');
 	include('../controller.projects.js');
+	include('../controller.chat.js');
 	include('../controller.collaboration.js');
 	
 	include('../wizards.js');

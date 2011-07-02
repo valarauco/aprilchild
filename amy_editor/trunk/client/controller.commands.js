@@ -480,6 +480,11 @@ client.commands.view__collaboration = function()
 	client.widgets.leftPane.switchPane(1);
 }
 
+client.commands.view__chat = function()
+{
+	client.widgets.leftPane.switchPane(2);
+}
+
 client.commands.view__fast_file_index = function()
 {
 	console.info('View>FastFileIndex');

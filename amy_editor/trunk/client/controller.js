@@ -117,7 +117,8 @@ client.onlaunch = function()
 		ac.TabPaneWidget,
 		$new(ac.TabPaneWidgetModel, [
 			{label:$loc('project_pane'), adapter:$new(amy.LeftPaneController)},
-			{label:$loc('collaborate_pane'), adapter:$new(amy.LeftPaneController)}			
+			{label:$loc('collaborate_pane'), adapter:$new(amy.LeftPaneController)},
+			{label:$loc('chat_pane'), adapter:$new(amy.LeftPaneController)}
 		]),
 		$new(amy.LeftPaneView, {position:'bottom', startingTabOffset:0, hasTabClosingButtons:false})
 	);
@@ -330,7 +331,7 @@ $class('amy.LeftPaneController < ac.TabPaneWidgetController');
 
 amy.LeftPaneController.prototype.onOpen = function(pane, index, node)
 {
-	var renderers = [this.renderProjectPane, this.renderCollaboratePane];
+	var renderers = [this.renderProjectPane, this.renderCollaboratePane, this.renderChatPane];
 	node.h(client.nodes.left.h()-22);
 	renderers[index](pane, node);
 }
@@ -346,6 +347,13 @@ amy.LeftPaneController.prototype.renderProjectPane = function(pane, node)
 	node.a($$()).pos(true).t(client.conf.masquerade?'':$loc('sc_no_project_opened')).v(true);
 	node.a($$()).pos(true).w(node.w()).h(node.h()).v(false);
 	client.nodes.projectsNode = node;
+}
+
+amy.LeftPaneController.prototype.renderChatPane = function(pane, node)
+{
+	node.w(node.w()+2);
+	client.nodes.chatSection = node.a($$()).pos(true).h(node.h()).v(false);
+	client.controller.renderChat();
 }
 
 amy.LeftPaneController.prototype.renderCollaboratePane = function(pane, node)

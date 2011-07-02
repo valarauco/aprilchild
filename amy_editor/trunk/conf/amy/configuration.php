@@ -23,7 +23,7 @@
 		(
 			// setup your database here as: 'YOUR_VIRTUAL_HOST'=>'host=localhost port=5432 dbname=amy_editor_development user=YOUR_USER password=YOUR_PASSWORD'
 			// you can put more lines for different deployments
-			'amy.local'=>'host=localhost port=5432 dbname=amy_editor_development user= password='
+			'amy.local'=>'host=localhost port=5432 dbname=amy user=postgres password=postgres'
 		),
 		// possible values are development|production. Try not to use `development' for production server, ever. Use `development' for troubleshooting, logging and such.
 		'environment' => 'development',

@@ -128,6 +128,7 @@ var client_lc =
 	
 	mi_View_Project:{cs:'Projekty', en:'Projects'},
 	mi_View_Collaboration:{cs:'Kolaborace', en:'Collaboration'},
+	mi_View_Chat:{cs:'Rozprávanie', en:'Chat'},
 	
 	mi_View_FastFileIndex:{cs:'Rychlé vyhledání souborů', en:'Fast File Index'},
 	mi_View_FastFunctionIndex:{cs:'Rychlé vyhledání funkcí', en:'Fast Function Index'},
@@ -159,6 +160,7 @@ var client_lc =
 	
 	project_pane:{cs:'Projekty', en:'Projects'},
 	collaborate_pane:{cs:'Kolaborace', en:'Collaboration'},
+	chat_pane:{cs:'Rozprávanie', en:'Chat'},
 	
 	editor_status_caret_position:{cs:'Řádek: @@row &nbsp; Sloupec: @@col', en:'Line: @@row &nbsp; Column: @@col'},
 	editor_status_caret_mode_1:{cs:'VKLÁDÁNÍ', en:'INSERT'},

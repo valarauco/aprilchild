@@ -538,7 +538,13 @@ amy.MainMenuModel.prototype.loadElements = function(acElem, callbackOnSuccess, c
 	item.properties.label = $loc('mi_View_Collaboration');
 	item.properties.commandId = 'view__collaboration';
 
+	// 		Collaborate
+	item = g_item.appendChild($new(ACElement));
+	item.isCollection = false;
+	item.properties.label = $loc('mi_View_Chat');
+	item.properties.commandId = 'view__chat';
 
+	
 /*
 	// 		Fast file browser
 	item = g_item.appendChild($new(ACElement));
