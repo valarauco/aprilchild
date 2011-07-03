@@ -122,16 +122,16 @@ a.disabled=false; a.value=' '; a.blur(); a.value=''; a.focus();}
 function chat_status(a,b,c){
 	//Tabs de contactos
 	var i = 0;
-	document.getElementById('chat_tab').innerHTML='<div class=".chat_contac_tab" style="float:left"><a href="#" onclick="window.location=\'chat.php?u='+c[i][0]+'\';return false">'+c[i][1]+"</a></div>";
+	document.getElementById('chat_tab').innerHTML='<div class="chat_contac_tab" style="float:left"><a href="#" onclick="window.location=\'chat.php?u='+c[i][0]+'\';return false">'+c[i][1]+"</a></div>";
 	i++;
 	for(i; i < c.length-1; i++){
-		document.getElementById('chat_tab').innerHTML+='<div class=".chat_contac_tab" style="float:left"><a href="#" onclick="window.location=\'chat.php?u='+c[i][0]+'\';return false">|'+c[i][1]+"</a></div>";
+		document.getElementById('chat_tab').innerHTML+='<div class="chat_contac_tab" style="float:left"><a href="#" onclick="window.location=\'chat.php?u='+c[i][0]+'\';return false">'+c[i][1]+"</a></div>";
 	}
 	document.getElementById('chat_tab').innerHTML+='<div style="clear:boath">&nbsp;</div>';
 
 	/////
 
-	tmp=curr_status; dta=''; 
+	tmp=curr_status; dta='';
 	if(a!='00'){
 		if(a!=lang_user){lang_user=a;chat_started=1}
 		document.title=lang_user+' '+' ('+lang_chatsess+')';

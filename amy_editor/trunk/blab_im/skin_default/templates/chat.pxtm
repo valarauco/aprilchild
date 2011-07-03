@@ -7,7 +7,7 @@
 	<div id="chat_tab"></div>
 	</td>
 </tr>
-<tr><td class="topchatbar1"><div id="rec_onl"></div></td>
+<tr style="display:none"><td class="topchatbar1"><div id="rec_onl"></div></td>
 
 <td class="topchatbar2">
 <a href="info.php?why=link" onclick="opa_st(document.getElementById('s_emo'),1);return false">
