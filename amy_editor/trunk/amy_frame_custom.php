@@ -54,7 +54,7 @@
 		<meta name="Author" content="All: Petr Krontorád, April-Child.com" />
 		<meta name="Copyright" content="Petr Krontorád, April-Child.com (http://www.april-child.com)" />
 	
-		<title>Amy Editor</title>
+		<title>CODE</title>
 
 		<link href="client/fry/mm/style/ac.ui.css" rel="stylesheet" type="text/css" />
 		<link href="client/fry/mm/style/theme/apple/theme-apple.css" rel="stylesheet" type="text/css" />

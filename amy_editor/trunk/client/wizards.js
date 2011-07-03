@@ -90,7 +90,7 @@ amy.wizards =
 	
 	user_sign_in:
 	{
-		template: '<div class="info"><div class="top"></div><div class="content"><div class="inner"><h2>What\'s a service</h2><p>Amy Editor supports external authentication services. Simply put, you don\'t have to register on yet another web application (Amy Editor in this case). If you happen to have  an account somewhere else, you can use it here. Currently <strong>Facebook</strong> is fully supported, other services (eg. OpenID) are under consideration.</p><p>In case you don\'t have an external account, you may always register for a <a href="javascript:amy.wizards.user_sign_in.open_register()">free Amy account</a>.</p></div></div><div class="bottom"></div></div><div class="content"><h3 class="step">Please select preferred service</h3><p>Use Amy service if you don\'t have (or simply don\'t want to use) any other account on supported services.</p><form><table class="form"><tbody><tr><td><select style="width:200px" id="service_name" onchange="amy.wizards.user_sign_in.show_authentication()"><option value="amy">Amy</option><option value="facebook">Facebook</option></select></td></tr></tbody></table></form><div id="auth-container"></div><p style="margin-top:20px;color:#444">If you don\'t have any account here or on Facebook, you must <a href="javascript:amy.wizards.user_sign_in.open_register()">register first</a> prior logging in.</p></div>',
+		template: '<div class="info"><div class="top"></div><div class="content"><div class="inner"><h2>What\'s a service</h2><p>CODE supports external authentication services. Simply put, you don\'t have to register on yet another web application (CODE in this case). If you happen to have  an account somewhere else, you can use it here. Currently <strong>Facebook</strong> is fully supported, other services (eg. OpenID) are under consideration.</p><p>In case you don\'t have an external account, you may always register for a <a href="javascript:amy.wizards.user_sign_in.open_register()">free CODE account</a>.</p></div></div><div class="bottom"></div></div><div class="content"><h3 class="step">Please select preferred service</h3><p>Use CODE service if you don\'t have (or simply don\'t want to use) any other account on supported services.</p><form><table class="form"><tbody><tr><td><select style="width:200px" id="service_name" onchange="amy.wizards.user_sign_in.show_authentication()"><option value="amy">CODE</option><option value="facebook">Facebook</option></select></td></tr></tbody></table></form><div id="auth-container"></div><p style="margin-top:20px;color:#444">If you don\'t have any account here or on Facebook, you must <a href="javascript:amy.wizards.user_sign_in.open_register()">register first</a> prior logging in.</p></div>',
 		vars:
 		{
 			auth_box:null
@@ -143,11 +143,11 @@ amy.wizards =
 		},
 		show_amy:function(authBox)
 		{
-			var ht = '<h4>Please enter your credentials</h4><p>This is the username and password you have chosen when registering to Amy Editor.</p>';
+			var ht = '<h4>Please enter your credentials</h4><p>This is the username and password you have chosen when registering to CODE.</p>';
 			ht += '<table><tbody><tr><td>Enter your username</td><td><input type="text" class="text" id="f_username"/></td></tr>';
 			ht += '<tr><td>Password</td><td><input type="password" class="text" id="f_password"/></td></tr>';
 			ht += '</tbody></table>';
-			ht += '<div class="buttons"><input type="button" value="Log in to Amy Editor" onclick="amy.wizards.user_sign_in.login_amy()" class="button"/></div>';
+			ht += '<div class="buttons"><input type="button" value="Log in to CODE" onclick="amy.wizards.user_sign_in.login_amy()" class="button"/></div>';
 			authBox.t(ht);
 		},
 		login_amy:function()
@@ -175,13 +175,13 @@ amy.wizards =
 		},
 		show_facebook:function(authBox)
 		{
-			authBox.t('<table style="margin-bottom:18px"><tbody><tr><td style="font-size:13px;padding-right:20px">Log in to Facebook</td><td><a href="javascript:amy.wizards.user_sign_in.call_external_sign_in(\'http://apps.facebook.com/amyeditor/\')"><img src="mm/i/facebook_login.gif" width="109" height="24" /></a></td></tr></tbody></table><p style="color:#888">Please note: the login process will open new browser window pointing to Facebook website, where you login and will be returned back to Amy Editor. You will be redirected automatically if you are already logged in to Facebook.</p>');
+			authBox.t('<table style="margin-bottom:18px"><tbody><tr><td style="font-size:13px;padding-right:20px">Log in to Facebook</td><td><a href="javascript:amy.wizards.user_sign_in.call_external_sign_in(\'http://apps.facebook.com/amyeditor/\')"><img src="mm/i/facebook_login.gif" width="109" height="24" /></a></td></tr></tbody></table><p style="color:#888">Please note: the login process will open new browser window pointing to Facebook website, where you login and will be returned back to CODE. You will be redirected automatically if you are already logged in to Facebook.</p>');
 		}
 	},
 	
 	user_register:
 	{
-		template: '<div class="info"><div class="top"></div><div class="content"><div class="inner"><h2>What\'s a service</h2><p>Amy Editor supports external authentication services. Simply put, you don\'t have to register on yet another web application (Amy Editor in this case). If you happen to have  an account somewhere else, you can use it here. Currently <strong>Facebook</strong> is fully supported, other services (eg. OpenID) are under consideration.</p><p>In case you don\'t have an external account, you may always register your Amy one.</p></div></div><div class="bottom"></div></div><div class="content"><h3 class="step">Why register?</h3><p>Registration in Amy Editor is simple, fast and adds significant benefits to you. When registered, you will be able to fully customize the editor. You can edit any settings such as bundles, themes and file associations. You will also be able to install and use existing third-party editor enhancements.</p><p>Registration is however strictly optional and you will never be limited in common use of the editor. There\'s also one sweet aspect - you can leverage your existing accounts on external services such as Facebook and don\'t have to register here.</p><div id="auth-container" style="margin-top:20px;margin-left:4px"><div id="auth-box" class="form-box" style="width:300px"><div class="top"></div><div class="content"><div class="inner" id="form-inner"></div></div><div class="bottom"></div></div></div></div>',
+		template: '<div class="info"><div class="top"></div><div class="content"><div class="inner"><h2>What\'s a service</h2><p>CODE supports external authentication services. Simply put, you don\'t have to register on yet another web application (CODE in this case). If you happen to have  an account somewhere else, you can use it here. Currently <strong>Facebook</strong> is fully supported, other services (eg. OpenID) are under consideration.</p><p>In case you don\'t have an external account, you may always register your CODE one.</p></div></div><div class="bottom"></div></div><div class="content"><h3 class="step">Why register?</h3><p>Registration in CODE is simple, fast and adds significant benefits to you. When registered, you will be able to fully customize the editor. You can edit any settings such as bundles, themes and file associations. You will also be able to install and use existing third-party editor enhancements.</p><p>Registration is however strictly optional and you will never be limited in common use of the editor. There\'s also one sweet aspect - you can leverage your existing accounts on external services such as Facebook and don\'t have to register here.</p><div id="auth-container" style="margin-top:20px;margin-left:4px"><div id="auth-box" class="form-box" style="width:300px"><div class="top"></div><div class="content"><div class="inner" id="form-inner"></div></div><div class="bottom"></div></div></div></div>',
 		vars:
 		{
 			auth_box:null
@@ -198,7 +198,7 @@ amy.wizards =
 			ht += '<tr><td>E-mail address</td><td><input style="width:240px" type="text" class="text" id="f_email"/></td></tr>';
 			ht += '<tr><td>Name (nickname)</td><td><input style="width:240px" type="text" class="text" id="f_nickname"/></td></tr>';
 			ht += '</tbody></table>';
-			ht += '<div class="buttons"><input type="button" value="Finish registration to Amy Editor" onclick="amy.wizards.user_register.register()" class="button"/></div><p style="color:#444">If you have a Facebook account and you\'d like to use it, you can safely skip the registration and <a href="javascript:amy.wizards.user_register.open_login()">log in to Amy</a> right away.</p>';
+			ht += '<div class="buttons"><input type="button" value="Finish registration to CODE" onclick="amy.wizards.user_register.register()" class="button"/></div><p style="color:#444">If you have a Facebook account and you\'d like to use it, you can safely skip the registration and <a href="javascript:amy.wizards.user_register.open_login()">log in to CODE</a> right away.</p>';
 			auth_box.t(ht);
 		},
 		complete: function(user)
@@ -267,7 +267,7 @@ amy.wizards =
 	
 	user_sign_out:
 	{
-		template: '<div class="content"><h3>Signing out of Amy Editor</h3><div id="auth-container" style="margin-top:20px;margin-left:4px"><div id="auth-box" class="form-box" style="width:300px"><div class="top"></div><div class="content"><div class="inner" id="form-inner"></div></div><div class="bottom"></div></div></div>',
+		template: '<div class="content"><h3>Signing out of CODE</h3><div id="auth-container" style="margin-top:20px;margin-left:4px"><div id="auth-box" class="form-box" style="width:300px"><div class="top"></div><div class="content"><div class="inner" id="form-inner"></div></div><div class="bottom"></div></div></div>',
 		vars:
 		{
 		},
@@ -276,8 +276,8 @@ amy.wizards =
 			amy.wizards.user_sign_out.vars.callbackComplete = params.callbackComplete;
 			amy.wizards.user_sign_out.vars.processing = false;
 			var auth_box = $('form-inner');
-			var ht = '<h4>Please confirm that you want to sign out from Amy Editor.</h4><p style="color:#666">Your session will expire, you will have to sign in again.</p>';
-			ht += '<div class="buttons"><input type="button" value="Sign out from Amy Editor" onclick="amy.wizards.user_sign_out.proceed()" class="button"/></div>';
+			var ht = '<h4>Please confirm that you want to sign out from CODE.</h4><p style="color:#666">Your session will expire, you will have to sign in again.</p>';
+			ht += '<div class="buttons"><input type="button" value="Sign out from CODE" onclick="amy.wizards.user_sign_out.proceed()" class="button"/></div>';
 			auth_box.t(ht);
 		},
 		complete: function()
@@ -499,7 +499,7 @@ amy.wizards =
 
 	open_project:
 	{
-		template: '<div class="info"><div class="top"></div><div class="content"><div class="inner"><h2>What\'s a project</h2><p>Project is a collection of resources(*) provided by third parties (such as your company, your fellow developers website and such) that is accessible to you.</p><p>Each project has its own unique URL address, pretty much like any standard web page. If you want to open a project, all you need is such URL.</p><p class="explanation">(*) If you don\'t know what a resource means, replace the word <strong>resource</strong> with <strong>text document</strong> for now and you\'ll be fine.</p></div></div><div class="bottom"></div></div><div class="content"><h3 class="step">Enter a project\'s URL</h3><p>When the address is filled with correct project\'s URL, you will be offered other options depending on project type. The address is checked <strong>as you type</strong>.</p><form><table class="form"><tbody><tr><td><input type="text" class="text" style="width:380px" value="" name="project_url" id="project_url" onkeypress="amy.wizards.open_project.check()" onblur="amy.wizards.open_project.check();fry.keyboard.start();" onfocus="fry.keyboard.stop()"  onkeyup="amy.wizards.open_project.check()"  onclick="amy.wizards.open_project.check()" /></td><td><div id="status" style="color:#888;font-size:10px"></div></td></tr></tbody></table></form><div id="auth-container"></div><ul class="options"><li>In case you have no idea what URL a project has, you might want to <a href="javascript:alert(\'Not implemented yet. See the blog entry about projects.\')">find it in the public list of projects</a>.</li><li>If your intention is just to see the Amy Editor and play with it, you may just as well <a href="javascript:amy.wizards.open_project.open_default()">open the default project</a> and start right-away.</li><li>You can also use set of predefined projects for accessing documents of your <a href="javascript:amy.wizards.open_project.open_default(\'ftp\')">FTP server</a>,  <a href="javascript:amy.wizards.open_project.open_default(\'dav\')">WebDAV server</a> or even <a href="javascript:amy.wizards.open_project.open_default(\'blog\')">your blog</a>.</li></ul></div>',
+		template: '<div class="info"><div class="top"></div><div class="content"><div class="inner"><h2>What\'s a project</h2><p>Project is a collection of resources(*) provided by third parties (such as your company, your fellow developers website and such) that is accessible to you.</p><p>Each project has its own unique URL address, pretty much like any standard web page. If you want to open a project, all you need is such URL.</p><p class="explanation">(*) If you don\'t know what a resource means, replace the word <strong>resource</strong> with <strong>text document</strong> for now and you\'ll be fine.</p></div></div><div class="bottom"></div></div><div class="content"><h3 class="step">Enter a project\'s URL</h3><p>When the address is filled with correct project\'s URL, you will be offered other options depending on project type. The address is checked <strong>as you type</strong>.</p><form><table class="form"><tbody><tr><td><input type="text" class="text" style="width:380px" value="" name="project_url" id="project_url" onkeypress="amy.wizards.open_project.check()" onblur="amy.wizards.open_project.check();fry.keyboard.start();" onfocus="fry.keyboard.stop()"  onkeyup="amy.wizards.open_project.check()"  onclick="amy.wizards.open_project.check()" /></td><td><div id="status" style="color:#888;font-size:10px"></div></td></tr></tbody></table></form><div id="auth-container"></div><ul class="options"><li>In case you have no idea what URL a project has, you might want to <a href="javascript:alert(\'Not implemented yet. See the blog entry about projects.\')">find it in the public list of projects</a>.</li><li>If your intention is just to see the CODE and play with it, you may just as well <a href="javascript:amy.wizards.open_project.open_default()">open the default project</a> and start right-away.</li><li>You can also use set of predefined projects for accessing documents of your <a href="javascript:amy.wizards.open_project.open_default(\'ftp\')">FTP server</a>,  <a href="javascript:amy.wizards.open_project.open_default(\'dav\')">WebDAV server</a> or even <a href="javascript:amy.wizards.open_project.open_default(\'blog\')">your blog</a>.</li></ul></div>',
 			
 		vars:
 		{

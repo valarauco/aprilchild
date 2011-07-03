@@ -18,7 +18,8 @@
 
 client.controller.userSignIn = function()
 {
-    client.view.showWizardDialogWindow($loc('wt_user_sign_in'), 'user_sign_in', {callbackComplete:function(user)
+    //client.view.showWizardDialogWindow($loc('wt_user_sign_in'), 'user_sign_in', {callbackComplete:function(user)
+	client.view.showWizardDialogWindow("Sign in", 'user_sign_in', {callbackComplete:function(user)
 	{
 		if (null == user)
 		{

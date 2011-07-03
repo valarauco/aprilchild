@@ -17,11 +17,9 @@
   *------------------------------------------------------------------------------------------
 */
 
-
 	ob_start("ob_gzhandler");
 	header('Content-Type: text/javascript; charset=UTF-8');
-	
-	
+		
 	include('../locale.js');
 	include('../helper.js');
 	include('../fry/3rdparty/base64/base64.js');
@@ -39,13 +37,13 @@
 	include('../controller.projects.js');
 	include('../controller.chat.js');
 	include('../controller.collaboration.js');
-	
 	include('../wizards.js');
-	
-
-
 ?>
 /*  ----------------------------------------------------------------  */
+/* If the user is the default user, display the login page (not required, but is a strong suggestion) */
+if (client.model.user.isDefault()){
+	client.controller.userSignIn();
+}
 
 if ( 'undefined' != typeof fry && 'undefined' != typeof fry.script )
 {

@@ -26,7 +26,7 @@ abstract class AmyProjectController extends ACBackend
 	protected $userTicket = null;
 	
 	protected $projectConf = array(
-		'name' => 'Amy Project',
+		'name' => 'CODE Project',
 		'protocol_version' => '1.0',
 		'authentication_scheme' => 'external_login_handler', // external_login_page, facebook, openid, readonly, anyone
 		'authentication_params' => ''

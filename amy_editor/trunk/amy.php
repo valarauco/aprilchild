@@ -46,7 +46,7 @@
 		<meta name="Author" content="All: Petr Krontorád, April-Child.com" />
 		<meta name="Copyright" content="Petr Krontorád, April-Child.com (http://www.april-child.com)" />
 	
-		<title><?php echo isset($_REQUEST['title']) ? $_REQUEST['title'] : 'Amy Editor'; ?></title>
+		<title><?php echo isset($_REQUEST['title']) ? $_REQUEST['title'] : 'COllaborative Development Environment'; ?></title>
 		
 	</head>
 <?php

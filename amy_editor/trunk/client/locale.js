@@ -72,8 +72,8 @@ var client_lc =
 	mi_clear_recent_searches:{cs:'Smazat historii vyhledávání', en:'Clear recent searches'},
 	
 	
-	mg_Amy:{cs:'Amy Editor', en:'Amy Editor'},
-	mi_Amy_About:{cs:'O Amy&hellip;', en:'About Amy&hellip;'},
+	mg_Amy:{cs:'CODE', en:'CODE'},
+	mi_Amy_About:{cs:'O CODE&hellip;', en:'About CODE&hellip;'},
 	mi_Amy_Preferences:{cs:'Nastavení&hellip;', en:'Preferences&hellip;'},
 
 	mg_Identity:{cs:'Identita', en:'Identity'},
@@ -167,7 +167,7 @@ var client_lc =
 	editor_status_caret_mode_2:{cs:'PŘEPISOVÁNÍ', en:'OVERWRITE'},
 	doc_untitled:{cs:'Nepojmenovaný', en:'Untitled'},
 
-	flash_loading_preferences:{cs:'Nahrávám vaše nastavení&hellip;', en:'Loading your Amy preferences&hellip;'},
+	flash_loading_preferences:{cs:'Nahrávám vaše nastavení&hellip;', en:'Loading your CODE preferences&hellip;'},
 	flash_loading_file:{cs:'Nahrávám soubor <strong>@@name</strong>&hellip;', en:'Loading file <strong>@@name</strong>&hellip;'},
 	flash_loading_new_file:{cs:'Probíhá vytváření nového souboru <strong>@@name</strong>&hellip;', en:'Creating new file <strong>@@name</strong>&hellip;'},
 	flash_loading_shared_file:{cs:'Probíhá nahrávání sdíleného souboru <strong>@@name</strong>&hellip;', en:'Opening shared file <strong>@@name</strong>&hellip;'},
@@ -185,13 +185,13 @@ var client_lc =
 	wt_html_page:{cs:'Náhled', en:'Preview'},
 	
 	wt_open_project:{cs:'Otevřít projekt', en:'Open project'},
-	sc_no_project_opened:{cs:'', en:'<div class="static-content"><h5>There is currently no project opened.</h5><p>In order to start working with Amy, you need a project in which documents are collected. The project is a simple URL address.</p><p>You can open new project anytime by simply accessing <strong><span class="menu-item-name">File</span> &gt; <span class="menu-item-name">Open project&hellip;</span></strong> top menu item. You can have as many projects opened at the same time as you wish.</p><p class="explain">If you are new to Amy and have no idea of what the previous sentence was about, and all you want is to be able to play around a little, there \'s always possibility of opening the default Amy playground project (available from the Open project dialog).</p><a href="javascript:client.controller.showOpenProject()">Open a project</a><p></div>'},
+	sc_no_project_opened:{cs:'', en:'<div class="static-content"><h5>There is currently no project opened.</h5><p>In order to start working with CODE, you need a project in which documents are collected. The project is a simple URL address.</p><p>You can open new project anytime by simply accessing <strong><span class="menu-item-name">File</span> &gt; <span class="menu-item-name">Open project&hellip;</span></strong> top menu item. You can have as many projects opened at the same time as you wish.</p><p class="explain">If you are new to CODE and have no idea of what the previous sentence was about, and all you want is to be able to play around a little, there \'s always possibility of opening the default CODE playground project (available from the Open project dialog).</p><a href="javascript:client.controller.showOpenProject()">Open a project</a><p></div>'},
 
 	sc_no_collaboration_active:{cs:'', en:'<div class="static-content"><h5>There is currently no collaboration active.</h5><p>In order to start collaborating on a document, open one and choose <strong><span class="menu-item-name">File</span> &gt; <span class="menu-item-name">Collaboration&hellip;</span> &gt; <span class="menu-item-name">Invite&hellip;</span></strong> from the top menu.</p><p class="explain">You can have as many simultaneous collaborations as you\'d like. Both collaborations that you started and collaborations you received and accepted invitations for. You will find information about currently ongoing collaborations directly in this pane.</p>'},
 	
 	wt_user_sign_in:{cs:'Přihlášení', en:'Sign In'},
 	wt_user_sign_out:{cs:'Odhlášení', en:'Sign Out'},
-	wt_user_register:{cs:'Registrace do Amy', en:'Amy Registration'},
+	wt_user_register:{cs:'Registrace do CODE', en:'CODE Registration'},
 	wt_user_change_icon:{cs:'Změnit ikonu', en:'Change icon'},
 	
 	fm_user_signed_in:{cs:'Vítejte, vaše jméno je @@nickname.', en:'Welcome @@nickname.'},

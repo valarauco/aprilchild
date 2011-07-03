@@ -107,6 +107,8 @@
 				$user = new AmyUser($this->configuration);
 				$user->authorize($pars['username'], $pars['password'], 'amy');
 				$user->create_session();
+				// TODO add here the code that logs the user into their chat
+				
 				self::setResult($user);
 			}
 			catch (Exception $e)
@@ -514,18 +516,18 @@
 				}
 				$mail = new Mail($this->user->credentials['email'], $pars['email']);
 				$body = <<<BODY
-Hello, {$this->user->credentials['nickname']} has invited you to collaborate on the document `{$pars['path']}' via the Amy Editor.
+Hello, {$this->user->credentials['nickname']} has invited you to collaborate on the document `{$pars['path']}' via CODE.
 
 ----------------------------
 {$pars['message']}
 ----------------------------
 
-You can either visit the link http://www.april-child.com/amy/amy.php?invitation_code={$row['invitation_hash']} or (if you have already Amy Editor open) go to the File > Collaboration > Accept ... menu and enter the code: {$row['invitation_hash']}
+You can either visit the link http://www.april-child.com/amy/amy.php?invitation_code={$row['invitation_hash']} or (if you have already CODE open) go to the File > Collaboration > Accept ... menu and enter the code: {$row['invitation_hash']}
 
 Cheers,
-Amy Editor.
+CODE.
 BODY;
-				$mail->send('Amy Editor - Invitation to collaboration on ' . $pars['path'], $body);
+				$mail->send('CODE - Invitation to collaboration on ' . $pars['path'], $body);
 				self::setResult($row);
 			}
 			catch (Exception $e)
