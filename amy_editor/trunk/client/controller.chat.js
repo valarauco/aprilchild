@@ -20,6 +20,7 @@ client.controller.messaging = {running:false, thread:null, types:['Unrecognized'
 
 client.controller.renderChat = function(force)
 {
+	//post_name("churin-flais");
 	var node = client.nodes.chatSection;
 	node.rc();
 	var width = node.w()-2000;
@@ -28,6 +29,8 @@ client.controller.renderChat = function(force)
 	var pane_index = -1;
 	var label = '...';
 	var ht = '<div style="background:#f0f0f0;-moz-border-radius:3px;-webkit-border-radius:3px;border:1px solid #ddd">';
+	ht += '<iframe height=0 >';
+	
 	ht += '<iframe height=';
 	ht += height;
 	ht +=' width=100%';
@@ -37,3 +40,17 @@ client.controller.renderChat = function(force)
 	client.nodes.chatSection.v(true)
 }
 
+function post_name (user_name) {
+  var myForm = document.createElement("form");
+  myForm.method="post" ;
+  myForm.action = "blab_im/ucp_name_amy.php" ;
+  //for (var k in p) {
+    var myInput = document.createElement("input") ;
+    myInput.setAttribute("name", 'guest_name') ;
+    myInput.setAttribute("value", user_name);
+    myForm.appendChild(myInput) ;
+  //}
+  document.body.appendChild(myForm) ;
+  myForm.submit() ;
+  document.body.removeChild(myForm) ;
+}
