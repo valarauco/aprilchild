@@ -1,3 +1,6 @@
 Amy Editor enhancement
+Project code name: CODE - COllaborative Development Enviroment
 
-Created by Valarauco & Rarodriguez for the course Collaborative Systems at UCR
+First created by AprilChild at https://github.com/aprilchild/aprilchild
+
+Forked by Valarauco & Rarodriguez for the course Collaborative Systems at UCR
