@@ -20,6 +20,16 @@ client.controller.messaging = {running:false, thread:null, types:['Unrecognized'
 
 client.controller.renderChat = function(force)
 {
+	var name_collab;
+	try
+  {
+		name_collab = name_collab_to_chat;
+  }
+	catch(err)
+  {
+		name_collab = 0;
+  }
+
 	var node = client.nodes.chatSection;
 	node.rc();
 	var width = node.w()-2000;
@@ -28,12 +38,11 @@ client.controller.renderChat = function(force)
 	var pane_index = -1;
 	var label = '...';
 	var ht = '<div style="background:#f0f0f0;-moz-border-radius:3px;-webkit-border-radius:3px;border:1px solid #ddd">';
-	ht += name_collab11;
 	ht += '<iframe height=';
 	ht += height;
 	ht +=' width=100%';
 	//ht += width;
-	ht += ' src="/blab_im/chat.php?u=1&guest_name='+ client.conf.user.username +'"> </div>';
+	ht += ' src="/blab_im/chat.php?u_name='+name_collab+'&guest_name='+ client.conf.user.username +'"> </div>';
 	node_coll.a($$()).t(ht);
 	client.nodes.chatSection.v(true)
 }
