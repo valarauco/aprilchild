@@ -12,8 +12,8 @@ $_SESSION['bmf_last']=0;
 
 $title=htmrem($settings['html_title']).' '.$lang['screen_name'];
 
-if(isset($_POST['guest_name'])){
-	$guest=trim($_POST['guest_name']);
+if(isset($_GET['guest_name'])){
+	$guest=trim($_GET['guest_name']);
 	$guest=neutral_escape($guest,32,'str');
 	$uid=(int)$_SESSION['bmf_id'];
 
@@ -25,5 +25,6 @@ if(isset($_POST['guest_name'])){
 		neutral_query($query);//redirect('ucp_settings.php',2,0);
 	}
 }
+echo "";
 
 ?>

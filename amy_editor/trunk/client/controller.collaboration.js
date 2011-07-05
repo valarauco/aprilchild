@@ -336,7 +336,7 @@ client.controller.renderCollaborationList = function(force)
 			if (collaborator.loaded)
 			{
 				var email = collaborator.email.replace('info@april-child.com', '--');
-				ht += '<td><table width="100%"><tr><td width="20">' + $$().a(client.view.renderUserIcon(16, '#f0f0f0', collaborator.picture)).t() + '</td><td style="font-weight:bold" fryis="1">' + collaborator.nickname + '</td><td width="60" style="font-size:10px;color:#888">' + amy.util.get_parsed_time_difference(collaborator.last_activity_seconds_offset) + ' sec.</td></tr><tr><td colspan="2" style="color:#444">' + email + '</td></tr></table></td><td width="30"><img src="/mm/i/chat_icon.gif" /></td>';
+				ht += '<td><table width="100%"><tr><td width="20">' + $$().a(client.view.renderUserIcon(16, '#f0f0f0', collaborator.picture)).t() + '</td><td style="font-weight:bold" fryis="1">' + collaborator.nickname + '</td><td width="60" style="font-size:10px;color:#888">' + amy.util.get_parsed_time_difference(collaborator.last_activity_seconds_offset) + ' sec.</td></tr><tr><td colspan="2" style="color:#444">' + email + '</td></tr></table></td><td width="30"><a href="#" onclick="setup_chat(\'' + collaborator.nickname + '\');client.widgets.leftPane.switchPane(2);return false;"><img src="/mm/i/chat_icon.gif" /></a></td>';
 			}
 			else
 			{
@@ -356,5 +356,10 @@ client.controller.renderCollaborationList = function(force)
 	{
 		client.nodes.collaborationList.v(true);		
 	}
+}
+
+//Chat Initializer
+function setup_chat(user_name){
+	name_collab11=user_name;
 }
 
