@@ -9,7 +9,7 @@ if(isset($_GET['u'])){
 	$u_name=trim($_GET['u_name']);
 	$query='SELECT * FROM '.$dbss['prfx']."_users WHERE usr_name='$u_name'";
 	$result=neutral_query($query);
-	if(neutral_num_rows($result)<1){
+	if(neutral_num_rows($result)>1){
 		$u=neutral_fetch_array($result);
 		$u=htmrem($u['usr_id']);
 	}else{$u=0;}
